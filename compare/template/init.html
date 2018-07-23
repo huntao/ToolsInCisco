@@ -6,16 +6,26 @@
 </head>
 <body>
 <form enctype="multipart/form-data" method="POST" action="/compare/">
-    <div>{{form.title1}}</div>
+    <div> 上一次结果</div>
+    上传后文件1<div>{{form.title1}}</div>
     <br/>
-    <div>{{form.file1}}</div>
+    上次文件1<div>{{form.file1}}</div>
     <br/>
-    <div>{{form.title2}}</div>
+    上传后文件2<div>{{form.title2}}</div>
     <br/>
-    <div>{{form.file2}}</div>
+    上次文件2<div>{{form.file2}}</div>
     <br/>
     <br/>
+    <div> 这一次结果</div>
+    上传后文件3<div>{{form.title3}}</div>
     <br/>
+    这次文件1<div>{{form.file3}}</div>
+    <br/>
+    上传后文件4<div>{{form.title4}}</div>
+    <br/>
+    这次文件2<div>{{form.file4}}</div>
+    <br/>
+    命名请不要重复
     <input type="submit" value="upload">
 </form>
 </body>
