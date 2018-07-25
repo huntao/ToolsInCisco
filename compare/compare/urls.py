@@ -14,11 +14,11 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, re_path
 from web.views import upload_file, compare
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('compare/', upload_file),
+    re_path('compare/(?P<num1>\d+)/(?P<num2>\d+)/', upload_file),
     path('result/', compare),
 ]

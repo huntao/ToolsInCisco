@@ -1,0 +1,36 @@
+init1-1.html<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>testcompare</title>
+</head>
+<body>
+<form enctype="multipart/form-data" method="POST" action="/compare/1/2/">
+    <div style="background-color:red"> 上一次结果</div>
+    上传后文件1<div>{{form.title_a1}}</div>
+    <br/>
+    上次文件1<div>{{form.file_a1}}</div>
+    <br/>
+    增加文件<a href="/compare/2/2">+</a>
+    <br/>
+    减少文件<a>-</a>
+    <br/>
+    <br/>
+    <div style="background-color:red"> 这一次结果</div>
+    上传后文件1<div>{{form.title_b1}}</div>
+    <br/>
+    这次文件1<div>{{form.file_b1}}</div>
+    <br/>
+    上传后文件2<div>{{form.title_b2}}</div>
+    <br/>
+    这次文件2<div>{{form.file_b2}}</div>
+    <br/>
+    增加文件<a href="/compare/1/3">+</a>
+    <br/>
+    减少文件<a href="/compare/1/1">-</a>
+    <br/>
+    命名请不要重复
+    <input type="submit" value="upload">
+</form>
+</body>
+</html>
